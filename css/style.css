@@ -532,6 +532,7 @@
 				color: #ccb484;
 				background: #fff;
 				box-shadow: inset 0 0 0 1px #fff;
+
 			}
 
 				input[type="button"].style2:hover,
@@ -678,14 +679,16 @@
 			.box.style2
 			{
 				text-align: center;
+
 			}
 
 				.box.style2 header
 				{
 					display: inline-block;
 					background: #fff;
-					padding: 2em 3em 2em 3em;
+					padding: 1em 2.5em 1em 2.5em;
 					margin: 0;
+					
 				}
 
 					.box.style2 header p
@@ -696,7 +699,7 @@
 				.box.style2 .inner
 				{
 					position: relative;
-					padding: 40px 0 0px 0;
+					padding: 20px 0 0px 0;
 				}
 
 					.box.style2 .inner:after
@@ -739,13 +742,18 @@
 
 			.box.style3
 			{
-				background: #fff;
+				background: #ccb484;
 				padding: 3em;
 			}
 			
 				.box.style3 header
 				{
 					text-align: center;
+				}
+				.box.style3 h2 {
+					font-weight: 300;
+				font-size: 1.75em;
+				letter-spacing: 4px;
 				}
 
 /*********************************************************************************/
@@ -936,7 +944,7 @@
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
 		text-align: center;
-		background: #90b0ba url('images/banner.svg') bottom center no-repeat;
+		background: #ccb484 url('images/banner.svg') bottom center no-repeat;
 		padding: 3em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
@@ -1286,3 +1294,65 @@ padding: 0 2em;
 .left {
 	text-align:left !important;
 }
+
+
+article.accordion
+{
+	display: block;
+	width: 70%;
+	padding: 0.5em 0.5em 1px 0.5em;
+	margin: 0 auto;
+	background-color: #666;
+	border-radius: 5px;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	z-index:10000000;
+}
+
+article.accordion section
+{
+	display: block;
+	width: 100%;
+	height: 2.5em;
+	padding: 0 1em;
+	margin: 0 0 0.5em 0;
+	color: #333;
+	background-color: #333;
+	overflow-x: hidden;
+	border-radius: 3px;
+}
+
+article.accordion section h2
+{
+	font-size: 1em;
+	width: 100%;
+	
+	padding: 0;
+	margin: 0;
+	color: #ddd;
+}
+
+article.accordion section h2 a
+{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: inherit;
+	outline: 0 none;
+}
+article.accordion section:target
+{
+	height: 15em;
+	background-color: #ccb484;
+}
+
+article.accordion section:target h2
+{
+
+	color: #333;
+}
+
+
+
+
+
+ 
