@@ -1,6 +1,19 @@
 @charset 'UTF-8';
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600');
 @import url('font-awesome.min.css');
+@font-face {
+  font-family: 'raleway';
+  src: url('Raleway.woff');
+ }
+@font-face {
+  font-family: 'droidsans';
+  src: url('droidsans.woff');
+ }
+ @font-face {
+  font-family: 'Kedage-wf';
+  src: url('Kedage-n.ttf');
+ }
+
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -490,7 +503,7 @@
 			cursor: pointer;
 			text-decoration: none;
 			outline: 0;
-			padding: 1em 3em 1em 3em;
+			padding: 0.5em 2.5em 0.5em 2.5em;
 			text-align: center;
 			border-radius: 3em;
 			font-weight: 400;
@@ -744,21 +757,24 @@
 		#nav_head {
 			width:100vw;
 			z-index:10000;
-			min-height:1.5em;
-			background-color:#FFF;		
+			
+			/*min-height:1.5em;*/
+			background-color:#f0f3f4;		
 		}
 		nav {
 			float:left;
-			width:50%;
+			width:100%;
 			letter-spacing: 0.098em;
 			position: relative;
-			margin:0 15em;
+			margin:auto auto;
+			text-align:center;
 			text-transform: uppercase;
 		}
 
 			 nav ul li {
 				display: inline-block;
-				padding-right:1.5em;
+				padding-right:1em;
+				padding-top:0.75em;
 			}
 				 nav ul li a {
 					color: inherit;	
@@ -836,7 +852,7 @@
 		color: #fff;
 		background-image:url('../images/fulls/tamburi.png');
 		background-repeat:no-repeat;
-		background-position:5% 60%;
+		background-position:5% 80%;
 		text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
 		text-align: center;
 		margin: 0;
@@ -852,9 +868,9 @@
 		
 			#header header h1
 			{
-				font-weight: 600;
+				font-weight: 300;
 				font-size: 2em;
-				letter-spacing: 3px;
+				letter-spacing: 2px;
 			}
 
 			#header header p
@@ -920,7 +936,7 @@
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
 		text-align: center;
-		background: #ccb484 url('images/banner.svg') bottom center no-repeat;
+		background: #90b0ba url('images/banner.svg') bottom center no-repeat;
 		padding: 3em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
@@ -939,14 +955,17 @@
 		
 			#banner header h2
 			{
-				font-weight: 400;
+				font-weight: 300;
 				font-size: 1.75em;
-				letter-spacing: 8px;
+				letter-spacing: 4px;
 			}
 
 		#banner p
 		{
-			margin: 0;
+			margin: auto auto;
+			width:80%;
+			font-weight:200;
+			letter-spacing: -0.05px;
 		}
 
 		#banner footer
@@ -961,6 +980,75 @@
 		}
 		
 			#banner a:hover
+			{
+				border-bottom-color: rgba(255,255,255,0);
+			}
+/*********************************************************************************/
+/* Banner_about                                                                        */
+/*********************************************************************************/
+
+	#banner_about
+	{
+		position: relative;
+		color: #fff;
+		text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
+		text-align: center;
+		background: #ccb484 url('images/banner.svg') bottom center no-repeat;
+		padding: 3em 0 5em 0;
+		margin: 0;
+		background-size: 125% auto;
+	}
+
+		#banner_about .button
+		{
+			color: #ccb484;
+			text-shadow: 0 0 0.5px rgba(53,184,130,0.25);
+		}
+		.box.style1 {
+			color: black !important;
+		}
+		#banner_about header
+		{
+			margin: 0 0 2em 0;
+		}
+		
+			#banner_about header h2
+			{
+				font-weight: 300;
+				font-size: 1.75em;
+				letter-spacing: 4px;
+			}
+			#banner_about header h3
+			{
+				font-weight: 300;
+				font-family: 'raleway';
+				font-size: 1em;
+				letter-spacing: 1px;
+			}
+
+		#banner_about p
+		{
+			margin: auto auto;
+			width:80%;
+			font-weight:200;
+			letter-spacing: -0.05px;
+		}
+		#banner_about ul {
+			width:60%;
+			margin:auto auto;
+		}
+		#banner_about footer
+		{
+			margin: 2em 0 0 0;
+		}
+		
+		#banner_about a
+		{
+			color: inherit;
+			border-bottom-color: rgba(255,255,255,0.5);
+		}
+		
+			#banner_about a:hover
 			{
 				border-bottom-color: rgba(255,255,255,0);
 			}
@@ -1184,4 +1272,17 @@
 			}
 .pplain {
 padding: 0 2em;
+}
+.width60 {
+	width:60% !important;
+}
+.width70 {
+	width:70% !important;
+}
+.kannada {
+		font-family: 'Kedage-wf';
+		font-weight: 200;
+}
+.left {
+	text-align:left !important;
 }
