@@ -1295,7 +1295,9 @@ padding: 0 2em;
 .left {
 	text-align:left !important;
 }
-
+.center {
+	text-align:center !important;
+}
 
 
 
