@@ -1029,7 +1029,7 @@
 			}
 			#banner_about header h3
 			{
-				font-weight: 300;
+				font-weight: 600;
 				font-family: 'raleway';
 				font-size: 1em;
 				letter-spacing: 1px;
@@ -1298,7 +1298,6 @@ padding: 0 2em;
 .center {
 	text-align:center !important;
 }
-
 
 
 
